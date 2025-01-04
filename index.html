@@ -12,6 +12,9 @@
     <script type="text/javascript" src="https://memotrace.cn/static/js/fullpage.min.js"></script>
     <script type="text/javascript" src="https://davidshimjs.github.io/qrcodejs/qrcode.min.js"></script>
     <style>
+        body {
+            font-family: "PingFang SC", "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+        }
         .page-font {
             color: #607ac9 !important;
         }
@@ -19,7 +22,7 @@
             color: #000 !important;
         }
         .chart-renderer {
-            transform: translateY(52px);
+            transform: translateY(-62px);
         }
         .fp-watermark {
             display: none;
@@ -96,7 +99,7 @@
         </div>
     </div>
     <div class="section" style="background-image: url('./imgs/2.jpg');background-size: cover;">
-        <div class="wordcloud container-content">
+        <div class="wordcloud container-content" style="height: auto;">
             <div id="word_cloud" class="chart-container"></div>
         </div>
         <div class="keyword-container">
@@ -177,8 +180,8 @@
                 <div class="text112 page-font">那天一定有你们<span style="color: brown;">难忘的回忆</span>吧</div>
                 <div><br></div>
                 <div class="text112 page-font">你们都是<span style="color: brown;">夜猫子</span></div>
-                <div class="text113">23:00</div>
-                <div class="text112 page-font">你们一共发送了<span style="color: brown;">1984</span>条消息</div>
+                <div class="text112 page-font"><span style="color: brown;">23:00</span>后才说晚安</div>
+                <div class="text112 page-font">深夜里一共发送<span style="color: brown;">1984</span>条消息</div>
             </div>
             <div class="parent">
                 <div class="dialog-container-time">
@@ -210,7 +213,7 @@
     </div>
     <div class="section" style="background-image: url('./imgs/5.jpg');background-size: cover;">
         <div>
-            <div class="time-container container-content">
+            <div class="time-container container-content" style="height: auto;">
                 <div class="text112 page-font">过去的一年里</div>
                 <div class="text112 page-font">你们一共发送了<span style="color: brown;">16366</span>条消息</div>
                 <div class="text112 page-font">总计<span style="color: brown;">73065</span>字</div>
@@ -236,7 +239,7 @@
     </div>
     <div class="section" style="background-image: url('./imgs/6.jpg');background-size: cover;">
             <div>
-                <div class="calendar-container container-content">
+                <div class="calendar-container container-content" style="height: auto;">
                     <div class="text012 page-font">2023年</div>
                     <div class="text012 page-font">
                         我们有
@@ -265,10 +268,70 @@
                 <div id="calendar-chart" class="calendar-chart chart-renderer"></div>
             </div>
     </div>
+    <div class="section" style="background-image: url('./imgs/9.jpg');background-size: cover;">
+        <div>
+            <div class="time-container container-content" style="transform: translateY(10px);height: auto;">
+                <div class="text112 page-font">
+                    小王消息占比
+                    <span style="color: brown;">45.87%</span>
+                    一共发送了
+                    <span style="color: brown;">7512</span>
+                </div>
+                <div class="text112 page-font">
+                    宝宝消息占比
+                    <span style="color: brown;">54.13%</span>
+                    一共发送了
+                    <span style="color: brown;">8866</span>
+                </div>
+                <div class="text112 page-font">不会吧！不会吧！</div>
+                <div class="text112 page-font">我一话痨怎么输给了你！</div>
+                <div class="text112 page-font">
+                    文本类的消息大约
+                    <span style="color: brown;">11007</span>
+                    条
+                </div>
+                <div class="text112 page-font">
+                    音视频通话
+                    <span style="color: brown;">80次</span>
+                </div>
+                <div class="text112 page-font">
+                    语音消息
+                    <span style="color: brown;">860条</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-image: url('./imgs/11.jpg');background-size: cover;">
+        <div>
+            <img src="./imgs/12.jpg" class="corner-image left-top" style="width: 100%;">
+            <div class="time-container container-content" style="transform: translateY(10px);height: auto;">
+                <div class="text112 page-font">我们在小红书荣获<span style="color: brown;">天下第一好</span>奖</div>
+                <div><br></div>
+                <div class="text112 page-font">Jeason和麦加兜有钱</div>
+                <div class="text112 page-font">
+                    互相评论
+                    <span style="color: brown;">19</span>
+                    次
+                </div>
+                <div class="text112 page-font">
+                    累计分享
+                    <span style="color: brown;">797</span>
+                    篇笔记
+                </div>
+                <div class="text112 page-font">
+                    官方通告！
+                    <br>
+                    自己的新世界，TA永远拥有
+                    <span style="color: brown;">优先阅览权</span>
+                    哪怕有时已读不回，但绝对不会已读乱回！
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section" style="background-image: url('./imgs/7.jpg');background-size: cover;">
         <div>
             <img src="./imgs/8.jpg" class="corner-image left-top">
-            <div class="time-container container-content" style="transform: translateY(10px);">
+            <div class="time-container container-content" style="transform: translateY(10px);height: auto;">
                 <div class="text112 page-font">全年</div>
                 <div class="text112 page-font">我们一共去了<span style="color: brown;">6</span>个地方</div>
                 <div><br></div>
@@ -283,6 +346,30 @@
                     <span style="color: brown;">更多</span>
                     的
                     <span style="color: brown;">人文景观</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-image: url('./imgs/10.jpg');background-size: cover;">
+        <div>
+            <div class="time-container container-content" style="transform: translateY(10px);height: auto;">
+                <div class="text112 page-font">宝宝</div>
+                <div class="text112 page-font">感情如气温<span style="color: brown;">节节攀升</span></div>
+                <div><br></div>
+                <div class="text112 page-font">每一步、每一瞬间都</div>
+                <div class="text112 page-font">
+                    <span style="color: brown;">如诗如画</span>
+                </div>
+                <div class="text112 page-font">正如那句话般————</div>
+                <div><br></div>
+                <div class="text112 page-font">
+                    在有生的瞬间能遇到
+                    <span style="color: brown;">你</span>
+                </div>
+                <div><br></div>
+                <div class="text112 page-font">
+                    定是花光了所有的
+                    <span style="color: brown;">运气</span>
                 </div>
             </div>
         </div>
